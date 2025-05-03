@@ -14,11 +14,10 @@ Este proyecto implementa un microservicio independiente utilizando **WebSocket**
 - **Node.js** (v18+)
 - **WebSocket** (biblioteca `ws`)
 - **Axios** para consumo de API REST
-- **dotenv** para gestión de variables de entorno
 - **JWT** para autenticación
 
 ## Instalación ⚙️
-# Para el backend
+### Para el backend
 ```bash
 # 1. Clonar repositorio
 git clone https://github.com/LEONGO037/BackendTallerDeGrado.git
@@ -31,7 +30,7 @@ npm install
 npm run dev
 ```
 
-# Para el microservicio
+### Para el microservicio
 ```bash
 # 1. Clonar repositorio
 git clone https://github.com/LEONGO037/IntegracionDeMicroservicio.git
@@ -45,4 +44,7 @@ cd src
 node server.js
 ```
 
-## 
+## Uso 🛠️
+En Postman poner el "Switch request type" en "WebSocket"
+En la URL 
+```ws://localhost:8080```
