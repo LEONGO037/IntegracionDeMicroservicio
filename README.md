@@ -88,5 +88,9 @@ node server.js
 - Conexión exitosa al WebSocket.
 - Validación de actualización automática cada 10 segundos.
 
+## Consumo de endpoints externos
+- POST /login para obtener el token JWT
+- GET //cuentas-por-rol/{rol} para la cantidad de cuentas de cada rol
+
 ## Autor
 - **Leonardo Delgado Medrano**
