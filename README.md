@@ -45,6 +45,48 @@ node server.js
 ```
 
 ## Uso 🛠️
-En Postman poner el "Switch request type" en "WebSocket"
-En la URL 
+- En Postman poner el "Switch request type" en "WebSocket"
+- En la URL 
 ```ws://localhost:8080```
+- En el mensaje es necesario poner:
+```json
+{
+    "usuario": "Mollo10084999",
+    "contrasenia": "10084999Mollo"
+}
+```
+
+- Como respuesta se tendra la cantidad de docentes, directores y estudiantes registrados actualmente, se actualiza esta lista cada 10 segundos
+```json
+{
+  "directores": 1,
+  "docentes": 3,
+  "estudiantes": 8,
+  "total": 12,
+}
+```
+
+## Estructura del Proyecto 📂
+```bash
+/microservicio-websocket
+├── src/
+│   ├── services/
+│   │   └── websocket.service.js  # Lógica principal WebSocket
+│   ├── server.js
+├── .gitignore
+└── package.json
+└── package-look.json
+```
+
+- **websocket.service.js** realiza el conteo de los usuarios registrados
+- **server.js** inicializa el servidor
+
+## Consideraciones
+- El microservicio maneja el inicio de sesion con token JWT
+
+## Pruebas
+- Conexión exitosa al WebSocket.
+- Validación de actualización automática cada 10 segundos.
+
+## Autor
+- **Leonardo Delgado Medrano**
